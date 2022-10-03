@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css.map">
+    <link rel="shortcut icon" href="./novoimg/dna.png" type="image/x-icon">
+    <title>Bioquímica - Home</title>
+</head>
+
+<head>
+
+    <link rel="stylesheet" href="./styles.css">
+
+
+    <nav>
+        <div class="logo">
+            <h2>Biotecnologia</h2>
+        </div>
+        <button onclick="abrirMenu()">&#9776;</button>
+        <div class="p" class="abas"><input class="abas" type="text">
+            <button class="a"></button>
+        </div>
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Perfil</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Mensagens</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Configurações</a></li>
+              <li role="presentation"><a href="#detalhes" aria-controls="detalhes" role="tab" data-toggle="tab">Detalhes</a></li>
+            </ul>
+            </div>
+
+          </div>
+      </div>
+      
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+        <ul id="botoesMenu">
+            <a href="#perfil">
+                <li>
+
+                </li>
+            </a>
+            <a href="#perfil">
+                <li>
+                    <p>O que propomos?</p>
+                </li>
+            </a>
+            <a href="#favoritos">
+                <li>
+                    <p>Conteúdo</p>
+                </li>
+            </a>
+            <a href="#comprados">
+                <li>
+                    <p>Quem Somos?</p>
+                </li>
+            </a>
+            <a href="#sair">
+                <li>
+                    <p>Login</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+   
+    <div class="content" id="perfil" style="background: #b3e4e0;">
+        <div class="height-nav"></div>
+    </section>
+        <div class="atual">
+            <h2>Bio-tech analogy IN </h2>
+            <hr>
+
+            <div class="text">
+                <h2>Oque Nós propomos?</h2>
+                <p>Somos um grupo de trabalho de cunho acadêmico que busca incentivar por meio da tecnologia e o uso da programação a relaçao com estudantes do ensino médio e tecnico com a matéria de biologia.
+                 <h3></h3></p>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="content" id="favoritos" style="background: #fe7210;">
+        <div class="height-nav"></div>
+        <div class="conteudo">
+        <h2><a href="clico.html">Ciclo de Krebs</a></h2>
+        <h2><a href="darwin.html">Charles Darwin</a></h2>
+        <h2><a href="proteinas.html">Proteínas</a></h2>
+        <h2><a href="metabolismo.html">Metabolismo Celular</a></h2>
+        </div>
+    </div>
+    <div class="content" id="comprados" style="background: #fe8c12  ;">
+        <div class="height-nav"></div>
+        <section class="videos">
+            <h2>Quem nós somos?</h2>
+            <h3>Desenvolvedores</h3>
+            <p>Kamilly Chicareli, Kelton Rodrigues, Glauco Santos, Isabelle Germano, Maria Eduarda, Nathan Dias e Julia
+                Rodrigues</p>
+            <h2>Nossa história</h2>
+            <p>Somos alunos do ensino médio integrado ao T.I na UNASP e desenvolvemos dentro do projeto Edu-tec, que
+                visa unir a tecnologia e a educação - iniciado no ano de 2021 -, <br> um site com o intuito de atrair o
+                interesse dos alunos para uma das materias de biologia e química, a bioquímica. <br>Trazendo de maneira
+                mais simples, prática e didática a junção dessas duas matérias para que o público, estudante ou não,
+                tenha uma alternativa para os estudos.</p>
+            <h2>Contato</h2>
+            <p><strong>Email</strong> - edutec2022.biologia@gmail.com<br>
+                <strong>Telefone</strong> - (11) 213423113 / (11) 123456558
+            </p>
+        </section>
+    </div>
+
+    <script class="cadastro">
+        const arrayHeight = document.getElementsByClassName('height-nav');
+        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+        for (let navHeightObj of arrayHeight)
+            navHeightObj.style.height = navHeight + 'px';
+
+        function abrirMenu() {
+            const botoesMenu = document.getElementById('botoesMenu');
+
+            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content" id="sair" style="background: #1f5c6f ;">
+    <div class="main-login">
+        <div class="content" id="Login">
+        <div class="left-login">
+            <h1>EDUTEC (sem nome por enquanto)<br>Biotech</h1>
+        </div>
+        <div class="right-login">
+
+            <div class="card-login">
+                <h1>CADASTRE-SE</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuario">
+
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login">Login</button>
+            </div>
+            </div> 
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
